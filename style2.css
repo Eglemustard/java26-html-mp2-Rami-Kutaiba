@@ -157,6 +157,30 @@ body {
   font-size: 15px;
   color: #444;
 }
+.footer {
+  background: #1a1a1a;
+  color: white;
+  padding: 40px 0;
+}
+
+.footer .container {
+  display: flex;
+  gap: 100px;
+}
+
+.footer-kolumn h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.footer-kolumn p,
+.footer-kolumn a {
+  display: block;
+  font-size: 15px;
+  color: #ccc;
+  margin-bottom: 6px;
+  
+}
 
 @media (max-width: 900px) {
   .korten {
