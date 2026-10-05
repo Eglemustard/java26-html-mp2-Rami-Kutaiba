@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+}
+
+
+.topbar {
+  background: white;
+  height: 125px;
+  display: flex;
+  justify-content: space-between;   
+  align-items: center;              
+
+  padding: 0 max(20px, calc((100% - 980px) / 2));
+}
+
+.vänster {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.vänster img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
+
+.öppet {
+  background: #1a1a1a;
+  color: white;
+  font-size: 13px;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.höger {
+  display: flex;
+  gap: 12px;
+}
+
+.select,
+.telefon,
+.filter {
+  background: rgb(218, 218, 223);
+  border: 1px solid #0c0808;
+  border-radius: 8px;
+  height: 40px;
+  padding: 0 16px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+.telefon img {
+  width: 60px;
+  height: 40px;
+
+}
+.filter img {
+  width: 20px;
+  height: 20px;
+
+}
+
+
+.huvud {
+  
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("viking.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding: 35px max(20px, calc((100% - 980px) / 2)) 60px;
+}
+
+
+.uppe-vänster {
+  display: flex;
+  align-items: baseline;
+  gap: 24px;
+  color: white;
+  margin-bottom: 55px;
+}
+
+.uppe-vänster h1 {
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.antal {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;   
+  gap: 24px;
+}
+
+.korten {
+  
+  flex: 0 0 calc((100% - 48px) / 3);
+  background: white;
+  border-radius: 14px;
+  padding: 8px 25px 25px;
+}
+
+
+.bilder {
+  position: relative;
+  height: 190px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bilder img {
+  max-width: 100%;
+  max-height: 180px;
+}
+
+.namnpåmat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.namnpåmat h2 {
+  font-size: 18px;
+}
+
+.pris {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.tag {
+  display: inline-block;
+  background: #f4f4f4;
+  font-size: 13px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  margin-top: 14px;
+}
+
+.korten p {
+  margin-top: 14px;
+  font-size: 15px;
+  color: #444;
+}
+
+@media (max-width: 900px) {
+  .korten {
+    flex: 0 0 100%;
+    
+  }
+}
